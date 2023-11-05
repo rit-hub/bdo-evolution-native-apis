@@ -1,0 +1,125 @@
+{
+  "Data": {
+    "TimeDepositFacility": {
+      "ProductInstanceReference": "",
+      "TimeDepositAccountNumber": "123456789",
+      "CustomerReference": "",
+      "BankBranchLocationReference": "",
+      "AccountType": "TM",
+      "AccountCurrency": {
+        "Currencycode": ""
+      },
+      "AccountBalance": [
+        {
+          "AccountBalance": {
+            "AmountValue": "0.1000000000000000055511151231257827021181583404541015625",
+            "AmountCurrency": {
+              "Currencycode": "PHP"
+            },
+            "DecimalPointPosition": ""
+          },
+          "AccountBalanceType": "Savings",
+          "AccounBalanceDate": {
+            "DateTimeContent": "",
+            "TimeZoneCode": "",
+            "DaylightSavingIndicator": ""
+          }
+        },
+        {
+          "AccountBalance": {
+            "AmountValue": "18396963.289999999105930328369140625",
+            "AmountCurrency": {
+              "Currencycode": "PHP"
+            },
+            "DecimalPointPosition": ""
+          },
+          "AccountBalanceType": "Avail",
+          "AccounBalanceDate": {
+            "DateTimeContent": "",
+            "TimeZoneCode": "",
+            "DaylightSavingIndicator": ""
+          }
+        },
+        {
+          "AccountBalance": {
+            "AmountValue": "18396963.289999999105930328369140625",
+            "AmountCurrency": {
+              "Currencycode": "PHP"
+            },
+            "DecimalPointPosition": ""
+          },
+          "AccountBalanceType": "PastDue",
+          "AccounBalanceDate": {
+            "DateTimeContent": "",
+            "TimeZoneCode": "",
+            "DaylightSavingIndicator": ""
+          }
+        },
+        {
+          "AccountBalance": {
+            "AmountValue": "18396963",
+            "AmountCurrency": {
+              "Currencycode": "PHP"
+            },
+            "DecimalPointPosition": ""
+          },
+          "AccountBalanceType": "Ledger",
+          "AccounBalanceDate": {
+            "DateTimeContent": "",
+            "TimeZoneCode": "",
+            "DaylightSavingIndicator": ""
+          }
+        },
+        {
+          "AccountBalance": {
+            "AmountValue": "18396963.289999999105930328369140625",
+            "AmountCurrency": {
+              "Currencycode": "PHP"
+            },
+            "DecimalPointPosition": ""
+          },
+          "AccountBalanceType": "MinLedger",
+          "AccounBalanceDate": {
+            "DateTimeContent": "",
+            "TimeZoneCode": "",
+            "DaylightSavingIndicator": ""
+          }
+        }
+      ],
+      "TaxReference": "",
+      "EntitlementOptionDefinition": "",
+      "EntitlementOptionSetting": "",
+      "RestrictionOptionDefinition": "",
+      "RestrictionOptionSetting": "",
+      "Associations": "",
+      "AssociationType": "",
+      "AssociationObligationEntitlement": "",
+      "AssociationReference": "",
+      "LinkedAccounts": "",
+      "LinkType": "",
+      "AccountDetails": "",
+      "PositionLimits": "",
+      "PositionLimitType": "",
+      "PositionLimitSettings": "",
+      "PositionLimitValue": "",
+      "DateType": "",
+      "StatementsSchedule": "",
+      "StatementType": "",
+      "StatementTransactionType": "",
+      "StatementPeriod": "",
+      "StatementReport": ""
+    }
+  },
+  "Links": {
+    "Self": "",
+    "First": "",
+    "Prev": "",
+    "Next": "",
+    "Last": ""
+  },
+  "Meta": {
+    "TotalPages": 0,
+    "FirstAvailableDateTime": "",
+    "LastAvailableDateTime": ""
+  }
+}

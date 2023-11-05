@@ -1,0 +1,331 @@
+{
+  "Data": {
+    "CurrentAccountFacility": {
+      "ProductInstanceReference": "",
+      "CurrentAccountNumber": {
+        "AccountIdentificationType": "",
+        "AccountIdentification": {
+          "IdentifierValue": {
+            "Value": "12345678"
+          },
+          "IdentifierIssuingAuthority": {
+            "PartyReference": {
+              "PartyName": {
+                "Name": ""
+              },
+              "PartyType": "",
+              "PartyDateTime": {
+                "DateTimeContent": "",
+                "TimeZoneCode": "",
+                "DaylightSavingIndicator": ""
+              },
+              "PartyIdentification": {
+                "PartyIdentificationType": "",
+                "PartyIdentification": ""
+              }
+            },
+            "PartyInvolvement": {
+              "PartyRoleType": {
+                "Text": ""
+              },
+              "PartyRoleName": {
+                "Name": ""
+              },
+              "PartyRoleValidityPeriod": {
+                "FromDateTime": {
+                  "DateTimeContent": "",
+                  "TimeZoneCode": "",
+                  "DaylightSavingIndicator": ""
+                },
+                "ToDateTime": {
+                  "DateTimeContent": "",
+                  "TimeZoneCode": "",
+                  "DaylightSavingIndicator": ""
+                }
+              },
+              "PartyInvolvementType": ""
+            }
+          },
+          "IdentifierStartDate": {
+            "DateTimeContent": "",
+            "TimeZoneCode": "",
+            "DaylightSavingIndicator": ""
+          },
+          "IdentifierEndDate": {
+            "DateTimeContent": "",
+            "TimeZoneCode": "",
+            "DaylightSavingIndicator": ""
+          }
+        }
+      },
+      "CustomerReference": "",
+      "BankBranchLocationReference": "",
+      "AccountType": {
+        "AccountType": "DD",
+        "AccountTypeName": {
+          "Name": ""
+        }
+      },
+      "AccountCurrency": {
+        "AccountCurrencyType": "",
+        "AccountCurrency": {
+          "Currencycode": ""
+        }
+      },
+      "TaxReference": "",
+      "EntitlementOptionDefinition": "",
+      "EntitlementOptionSetting": "",
+      "RestrictionOptionDefinition": "",
+      "RestrictionOptionSetting": "",
+      "Associations": "",
+      "AssociationType": "",
+      "AssociationObligationEntitlement": "",
+      "AssociationReference": "",
+      "LinkedAccounts": {
+        "AccountStatus": {
+          "AccountStatus": {
+            "StatusReason": {
+              "Text": ""
+            },
+            "StatusDateTime": {
+              "DateTimeContent": "",
+              "TimeZoneCode": "",
+              "DaylightSavingIndicator": ""
+            },
+            "StatusValidityPeriod": {
+              "FromDateTime": {
+                "DateTimeContent": "",
+                "TimeZoneCode": "",
+                "DaylightSavingIndicator": ""
+              },
+              "ToDateTime": {
+                "DateTimeContent": "",
+                "TimeZoneCode": "",
+                "DaylightSavingIndicator": ""
+              }
+            },
+            "StatusInvolvedParty": {
+              "PartyReference": {
+                "PartyName": {
+                  "Name": ""
+                },
+                "PartyType": "",
+                "PartyDateTime": {
+                  "DateTimeContent": "",
+                  "TimeZoneCode": "",
+                  "DaylightSavingIndicator": ""
+                },
+                "PartyIdentification": {
+                  "PartyIdentificationType": "",
+                  "PartyIdentification": ""
+                }
+              },
+              "PartyInvolvement": {
+                "PartyRoleType": {
+                  "Text": ""
+                },
+                "PartyRoleName": {
+                  "Name": ""
+                },
+                "PartyRoleValidityPeriod": {
+                  "FromDateTime": {
+                    "DateTimeContent": "",
+                    "TimeZoneCode": "",
+                    "DaylightSavingIndicator": ""
+                  },
+                  "ToDateTime": {
+                    "DateTimeContent": "",
+                    "TimeZoneCode": "",
+                    "DaylightSavingIndicator": ""
+                  }
+                },
+                "PartyInvolvementType": ""
+              }
+            }
+          },
+          "AccountStatusType": ""
+        },
+        "AccountIdentification": {
+          "AccountIdentificationType": "",
+          "AccountIdentification": {
+            "IdentifierValue": {
+              "Value": ""
+            },
+            "IdentifierIssuingAuthority": {
+              "PartyReference": {
+                "PartyName": {
+                  "Name": ""
+                },
+                "PartyType": "",
+                "PartyDateTime": {
+                  "DateTimeContent": "",
+                  "TimeZoneCode": "",
+                  "DaylightSavingIndicator": ""
+                },
+                "PartyIdentification": {
+                  "PartyIdentificationType": "",
+                  "PartyIdentification": ""
+                }
+              },
+              "PartyInvolvement": {
+                "PartyRoleType": {
+                  "Text": ""
+                },
+                "PartyRoleName": {
+                  "Name": ""
+                },
+                "PartyRoleValidityPeriod": {
+                  "FromDateTime": {
+                    "DateTimeContent": "",
+                    "TimeZoneCode": "",
+                    "DaylightSavingIndicator": ""
+                  },
+                  "ToDateTime": {
+                    "DateTimeContent": "",
+                    "TimeZoneCode": "",
+                    "DaylightSavingIndicator": ""
+                  }
+                },
+                "PartyInvolvementType": ""
+              }
+            },
+            "IdentifierStartDate": {
+              "DateTimeContent": "",
+              "TimeZoneCode": "",
+              "DaylightSavingIndicator": ""
+            },
+            "IdentifierEndDate": {
+              "DateTimeContent": "",
+              "TimeZoneCode": "",
+              "DaylightSavingIndicator": ""
+            }
+          }
+        },
+        "AccountDate": {
+          "AccountDateType": "",
+          "AccountDate": {
+            "DateTimeContent": "",
+            "TimeZoneCode": "",
+            "DaylightSavingIndicator": ""
+          }
+        },
+        "AccountType": {
+          "AccountType": "",
+          "AccountTypeName": {
+            "Name": ""
+          }
+        },
+        "AccountPurpose": {
+          "Text": ""
+        },
+        "AccountBalance": [
+          {
+            "AccountBalance": {
+              "AmountValue": "245.79",
+              "AmountCurrency": {
+                "Currencycode": "Peso"
+              },
+              "DecimalPointPosition": ""
+            },
+            "AccountBalanceType": "Current",
+            "AccounBalanceDate": {
+              "DateTimeContent": "",
+              "TimeZoneCode": "",
+              "DaylightSavingIndicator": ""
+            }
+          },
+          {
+            "AccountBalance": {
+              "AmountValue": "6963.29",
+              "AmountCurrency": {
+                "Currencycode": "Php"
+              },
+              "DecimalPointPosition": ""
+            },
+            "AccountBalanceType": "Avail",
+            "AccounBalanceDate": {
+              "DateTimeContent": "",
+              "TimeZoneCode": "",
+              "DaylightSavingIndicator": ""
+            }
+          },
+          {
+            "AccountBalance": {
+              "AmountValue": "67578.87",
+              "AmountCurrency": {
+                "Currencycode": "Dol"
+              },
+              "DecimalPointPosition": ""
+            },
+            "AccountBalanceType": "PastDue",
+            "AccounBalanceDate": {
+              "DateTimeContent": "",
+              "TimeZoneCode": "",
+              "DaylightSavingIndicator": ""
+            }
+          },
+          {
+            "AccountBalance": {
+              "AmountValue": "1883.0",
+              "AmountCurrency": {
+                "Currencycode": "Rup"
+              },
+              "DecimalPointPosition": ""
+            },
+            "AccountBalanceType": "Ledger",
+            "AccounBalanceDate": {
+              "DateTimeContent": "",
+              "TimeZoneCode": "",
+              "DaylightSavingIndicator": ""
+            }
+          },
+          {
+            "AccountBalance": {
+              "AmountValue": "5887.45",
+              "AmountCurrency": {
+                "Currencycode": "Eur"
+              },
+              "DecimalPointPosition": ""
+            },
+            "AccountBalanceType": "MinLedger",
+            "AccounBalanceDate": {
+              "DateTimeContent": "",
+              "TimeZoneCode": "",
+              "DaylightSavingIndicator": ""
+            }
+          }
+        ],
+        "AccountCurrency": {
+          "AccountCurrencyType": "",
+          "AccountCurrency": {
+            "Currencycode": ""
+          }
+        },
+        "AccountDescription": {
+          "Text": ""
+        }
+      },
+      "LinkType": {
+        "Text": ""
+      },
+      "AccountDetails": "",
+      "PositionLimits": "",
+      "PositionLimitType": "",
+      "PositionLimitSettings": "",
+      "PositionLimitValue": "",
+      "DateType": ""
+    }
+  },
+  "Links": {
+    "Self": "",
+    "First": "",
+    "Prev": "",
+    "Next": "",
+    "Last": ""
+  },
+  "Meta": {
+    "TotalPages": 0,
+    "FirstAvailableDateTime": "",
+    "LastAvailableDateTime": ""
+  }
+}

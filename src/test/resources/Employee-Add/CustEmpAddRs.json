@@ -1,0 +1,88 @@
+{
+  "rqUID": {
+    "rqUID": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+  },
+  "status": {
+    "statusCode": 0,
+    "statusDesc": "string",
+    "supportUID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "supportDescription": "string",
+    "errorCount": 0,
+    "warningCount": 0,
+    "errors": [
+      {
+        "source": "string",
+        "errNum": "string",
+        "errDesc": "string",
+        "errDtl": "string",
+        "errField": "string",
+        "errType": "s",
+        "errTagName": "string",
+        "hostErrCode": "string",
+        "useCode": "st",
+        "supportUID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "rows": [
+          0
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "source": "string",
+        "errNum": "string",
+        "errDesc": "string",
+        "errDtl": "string",
+        "errField": "string",
+        "errType": "s",
+        "errTagName": "string",
+        "hostErrCode": "string",
+        "useCode": "st",
+        "supportUID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "rows": [
+          0
+        ]
+      }
+    ]
+  },
+  "cardAcctId": {
+    "acctId": "string",
+    "acctIdMasked": "",
+    "acctType": "string"
+  },
+  "custId": {
+    "custPermId": "string",
+    "custPermIdMasked": "string"
+  },
+  "employment": {
+    "empAddr": {
+      "fullName": "string",
+      "addr1": "string",
+      "addr2": "string",
+      "addr3": "string",
+      "addr4": "string",
+      "addr5": "string",
+      "postalCode": "string",
+      "zipCode": "string",
+      "zipSuffix": "string",
+      "zipRouteNum": "st",
+      "zipChkDigit": "s",
+      "postLocaleCode": "string",
+      "addrCode": "string"
+    },
+    "empStartDt": "2023-08-08",
+    "busEmailAddr": "string",
+    "empIncomeAmt": {
+      "amt": 0
+    },
+    "employerId": "string",
+    "empPhoneAvailCode": "string",
+    "faxNumber": "string",
+    "phoneNumber": "string",
+    "phoneNumberExt": "string",
+    "empStopDt": "2023-08-08",
+    "empType": "string",
+    "jobTitleType": "string",
+    "sicCode": "string",
+    "payrollId": "string"
+  }
+}

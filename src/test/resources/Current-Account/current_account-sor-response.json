@@ -1,0 +1,53 @@
+{
+  "status": {
+    "statusCode": 0,
+    "statusDesc": "successful",
+    "supportUID": null,
+    "supportDescription": null,
+    "errorCount": null,
+    "warningCount": null,
+    "errors": null,
+    "warnings": null
+  },
+  "depAcctId": {
+    "acctId": "12345678",
+    "acctType": "DD"
+  },
+  "acctBals": [
+    {
+      "balType": "Current",
+      "curAmt": {
+        "amt": 245.79,
+        "curCode": "Peso"
+      }
+    },
+    {
+      "balType": "Avail",
+      "curAmt": {
+        "amt": 6963.29,
+        "curCode": "Php"
+      }
+    },
+    {
+      "balType": "PastDue",
+      "curAmt": {
+        "amt": 67578.87,
+        "curCode": "Dol"
+      }
+    },
+    {
+      "balType": "Ledger",
+      "curAmt": {
+        "amt": 1883.0,
+        "curCode": "Rup"
+      }
+    },
+    {
+      "balType": "MinLedger",
+      "curAmt": {
+        "amt": 5887.45,
+        "curCode": "Eur"
+      }
+    }
+  ]
+}

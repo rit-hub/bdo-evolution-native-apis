@@ -1,0 +1,28 @@
+{
+  "status": {
+    "statusCode": 1,
+    "statusDesc": "Warning",
+    "supportUID": null,
+    "supportDescription": null,
+    "errorCount": 1,
+    "warningCount": null,
+    "errors": [
+      {
+        "source": null,
+        "errNum": null,
+        "errDesc": "Host system error",
+        "errDtl": "",
+        "errField": "",
+        "errType": "3",
+        "errTagName": null,
+        "hostErrCode": "HC00052",
+        "useCode": null,
+        "supportUID": null,
+        "rows": null
+      }
+    ],
+    "warnings": null
+  },
+  "depAcctId": null,
+  "acctBals": null
+}

@@ -1,0 +1,28 @@
+{
+  "status": {
+    "statusCode": 1,
+    "statusDesc": "Warning",
+    "supportUID": null,
+    "supportDescription": null,
+    "errorCount": 1,
+    "warningCount": null,
+    "errors": [
+      {
+        "source": null,
+        "errNum": null,
+        "errDesc": "Host application error",
+        "errDtl": "",
+        "errField": "",
+        "errType": "3",
+        "errTagName": null,
+        "hostErrCode": "PS10107",
+        "useCode": null,
+        "supportUID": null,
+        "rows": null
+      }
+    ],
+    "warnings": null
+  },
+  "depAcctId": null,
+  "acctBals": null
+}

@@ -1,0 +1,100 @@
+{
+  "mappings": [
+    {
+      "priority": 1,
+      "request": {
+        "method": "POST",
+        "url": "/PartyReference/NewSavingsAccount/Initiate",
+        "headers": {
+          "Authorization": {
+            "equalTo": "BearerToken"
+          }
+        },
+        "bodyPatterns": [
+          {
+            "equalToJson": {
+              "rqUID": {
+                "rqUID": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+              },
+              "aliasBankAcctId": {
+                "aliasAcctType": "string",
+                "aliasAcctId": "string",
+                "aliasAcctIdMasked": "string"
+              },
+              "bankAcctId": {
+                "acctType": "string",
+                "acctId": "string",
+                "acctIdMasked": ""
+              },
+              "acctRelations": [
+                {
+                  "relationCode": "string",
+                  "custId": {
+                    "custPermId": "string",
+                    "custPermIdMasked": "string"
+                  },
+                  "taxLiabilityPctAmt": 0,
+                  "noticeFlagDescription": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "response": {
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "status": 200,
+        "jsonBody": {
+          "rqUID": {
+            "rqUID": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+          },
+          "status": {
+            "statusCode": 0,
+            "statusDesc": "string",
+            "supportUID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+            "supportDescription": "string",
+            "errorCount": 0,
+            "warningCount": 0,
+            "errors": [
+              {
+                "source": "string",
+                "errNum": "string",
+                "errDesc": "string",
+                "errDtl": "string",
+                "errField": "string",
+                "errType": "s",
+                "errTagName": "string",
+                "hostErrCode": "string",
+                "useCode": "st",
+                "supportUID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                "rows": [
+                  0
+                ]
+              }
+            ],
+            "warnings": [
+              {
+                "source": "string",
+                "errNum": "string",
+                "errDesc": "string",
+                "errDtl": "string",
+                "errField": "string",
+                "errType": "s",
+                "errTagName": "string",
+                "hostErrCode": "string",
+                "useCode": "st",
+                "supportUID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                "rows": [
+                  0
+                ]
+              }
+            ]
+          }
+        }
+
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "SavingAccountFacility": {
+    "AccountDetails": {
+      "AccountCurrency": "",
+      "AccountType": "",
+      "AliasBankAccountDetails": {
+        "AliasAccountId": "",
+        "AliasAccountIdMasked": ""
+      },
+      "AliasBankAccountId": {
+        "AccountType": ""
+      },
+      "BankAccountDetails": {
+        "AccountId": "",
+        "AccountIdMasked": "",
+        "AccountType": ""
+      }
+    },
+    "AccountRelations": [
+      {
+        "CustomerId": {
+          "CustomerNumber": ""
+        },
+        "RelationCode": ""
+      }
+    ],
+    "AssociationReference": {
+      "AssociationObligationOrEntitlement": "",
+      "AssociationType": "",
+      "Associations": ""
+    },
+    "BankBranchOrLocationReference": {},
+    "CustomerReference": {
+      "RequestId": ""
+    },
+    "DateType": "",
+    "EntitlementOptionSetting": "",
+    "LinkType": "",
+    "LinkedAccounts": "",
+    "PositionLimitSettings": "",
+    "RestrictionOptionSetting": "",
+    "StatementPeriod": "",
+    "StatementReport": "",
+    "StatementTransactionType": "",
+    "StatementType": "",
+    "StatementsSchedule": "",
+    "TaxReference": {
+      "NoticeFlagDescription": "",
+      "TaxLiabilityPercentageAmount": 0
+    }
+  }
+}

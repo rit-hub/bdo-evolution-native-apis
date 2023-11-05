@@ -1,0 +1,28 @@
+{
+  "status": {
+    "statusCode": 1,
+    "statusDesc": "Warning",
+    "supportUID": null,
+    "supportDescription": null,
+    "errorCount": 1,
+    "warningCount": null,
+    "errors": [
+      {
+        "source": null,
+        "errNum": null,
+        "errDesc": "Account Is Deceased",
+        "errDtl": "",
+        "errField": "",
+        "errType": "3",
+        "errTagName": null,
+        "hostErrCode": "PS10187",
+        "useCode": null,
+        "supportUID": null,
+        "rows": null
+      }
+    ],
+    "warnings": null
+  },
+  "depAcctId": null,
+  "acctBals": null
+}

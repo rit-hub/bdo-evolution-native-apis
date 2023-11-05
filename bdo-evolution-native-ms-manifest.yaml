@@ -1,0 +1,127 @@
+---
+# Source: bdo-sample-chart/charts/bdo-sample-request-ms/templates/serviceaccount.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: bdo-evolution-native-ms-ob
+  labels:
+    helm.sh/chart: bdo-evolution-native-ms-1.0.0
+    app.kubernetes.io/name: bdo-evolution-native-ms
+    app.kubernetes.io/instance: release-name
+    app.kubernetes.io/version: "1.16.0"
+    app.kubernetes.io/managed-by: Helm
+---
+# Source: bdo-sample-chart/charts/bdo-sample-request-ms/templates/config.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: bdo-evolution-native-ms-ob
+data:
+  EVOLUTION_TOKEN_URL: "https://app01.evolution.sit.bdo.com.ph/uaa/oauth/token"
+  EVOLUTION_TOKEN_CLIENT_ID: "UnifiedUIforSignature.cfV3KA51fD1VRzB5F6wtimXt7rxgQDH9"
+  EVOLUTION_TOKEN_GRANT_TYPE: "password"
+  EVOLUTION_TOKEN_USERNAME: "S_UEVO_PT"
+  EVOLUTION_TOKEN_PASSWORD: "SFPEVOAPR1"
+
+  EVOLUTION_ACCOUNT_BALANCE_INQUIRY_URL: "https://app01.evolution.sit.bdo.com.ph/customerposition/bal/inq"
+
+---
+# Source: bdo-sample-chart/charts/bdo-sample-request-ms/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: bdo-evolution-native-ms-ob
+  labels:
+    helm.sh/chart: bdo-evolution-native-ms-1.0.0
+    app.kubernetes.io/name: bdo-evolution-native-ms
+    app.kubernetes.io/instance: release-name
+    app.kubernetes.io/version: "1.16.0"
+    app.kubernetes.io/managed-by: Helm
+spec:
+  type: ClusterIP
+  ports:
+    - port: 5080
+      targetPort: 8080
+      protocol: TCP
+      name: http
+  selector:
+    app.kubernetes.io/name: bdo-evolution-native-ms
+    app.kubernetes.io/instance: release-name
+---
+# Source: bdo-sample-chart/charts/bdo-sample-request-ms/templates/bdo-evolution-native-ms-manifest.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bdo-evolution-native-ms
+  labels:
+    helm.sh/chart: bdo-evolution-native-ms-1.0.0
+    app.kubernetes.io/name: bdo-evolution-native-ms
+    app.kubernetes.io/instance: release-name
+    app.kubernetes.io/version: "1.16.0"
+    app.kubernetes.io/managed-by: Helm
+spec:
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: bdo-evolution-native-ms
+      app.kubernetes.io/instance: release-name
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: bdo-evolution-native-ms
+        app.kubernetes.io/instance: release-name
+    spec:
+      imagePullSecrets:
+        - name: ob-bdo-image-pull-secret-aws
+      serviceAccountName: bdo-sample-request-ms-ob
+      securityContext:
+        { }
+      containers:
+        - name: bdo-evolution-native-ms-ob
+          securityContext:
+            { }
+          image: "211958583110.dkr.ecr.ap-southeast-1.amazonaws.com/bdo-evolution-native-ms:0.0.1"     # required to replace with ECR image w/c created in GitLab pipeline
+          imagePullPolicy: IfNotPresent
+          envFrom:
+            - configMapRef:
+                name: bdo-evolution-native-ms-ob
+          ports:
+            - name: http
+              containerPort: 8080
+              protocol: TCP
+
+
+          resources:
+            limits:
+              cpu: 1000m
+              memory: 1Gi
+            requests:
+              cpu: 250m
+              memory: 512Mi
+---
+# Source: bdo-sample-chart/charts/bdo-sample-request-ms/templates/hpa.yaml
+apiVersion: autoscaling/v2beta1
+kind: HorizontalPodAutoscaler
+metadata:
+  name: bdo-evolution-native-ms-ob
+  labels:
+    helm.sh/chart: bdo-evolution-native-ms-1.0.0
+    app.kubernetes.io/name: bdo-evolution-native-ms
+    app.kubernetes.io/instance: release-name
+    app.kubernetes.io/version: "1.16.0"
+    app.kubernetes.io/managed-by: Helm
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: bdo-evolution-native-ms
+  minReplicas: 1
+  maxReplicas: 10
+  metrics:
+    - type: Resource
+      resource:
+        name: cpu
+        targetAverageUtilization: 70
+    - type: Resource
+      resource:
+        name: memory
+        targetAverageUtilization: 70

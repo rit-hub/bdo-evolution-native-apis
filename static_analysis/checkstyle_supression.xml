@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE suppressions PUBLIC
+        "-//Checkstyle//DTD SuppressionFilter Configuration 1.2//EN"
+        "https://checkstyle.org/dtds/suppressions_1_2.dtd">
+
+<suppressions>
+    <suppress checks="RegexpSingleline" files="BalanceInquiryController.java"/>
+    <suppress checks="ClassDataAbstractionCoupling" files="BalanceInquiryServiceImpl.java"/>
+    <suppress checks="ClassFanOutComplexity" files="BalanceInquiryServiceImpl.java"/>
+    <suppress checks="[a-zA-Z0-9]*" files=".*model*."/>
+    <suppress checks="[a-zA-Z0-9]*" files=".*dto*."/>
+</suppressions>

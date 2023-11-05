@@ -1,0 +1,87 @@
+{
+  "rqUID": {
+    "rqUID": "1349bc4a-a50d-494a-b3b1-a83bee4ab143"
+  },
+  "status": {
+    "statusCode": 0,
+    "statusDesc": "Success",
+    "supportUID": null,
+    "supportDescription": null,
+    "errorCount": null,
+    "warningCount": null,
+    "errors": null,
+    "warnings": null
+  },
+  "recCtrlOut": {
+    "matchedRec": 0,
+    "sentRec": 1,
+    "cursor": null
+  },
+  "custBasics": [
+    {
+      "custId": {
+        "custPermId": "0006197232",
+        "custPermIdMasked": null
+      },
+      "custType": "Personal",
+      "custMailCustCode": "INDIVIDUAL",
+      "taxId": {
+        "id": "",
+        "idMasked": null
+      },
+      "nationalId": {
+        "id": "",
+        "idMasked": null
+      },
+      "phoneNum": {
+        "phoneType": "EvePhone",
+        "phone": "0",
+        "intlDialCode": null,
+        "phoneExt": null
+      },
+      "birthDt": {
+        "date": "1945-04-05",
+        "dateMasked": null
+      },
+      "custAddr": {
+        "fullName": "JAN M PAULINSKY",
+        "addr1": "ADDR1 0006197232",
+        "addr2": null,
+        "addr3": null,
+        "addr4": null,
+        "addr5": null,
+        "postalCode": "",
+        "zipCode": null,
+        "addrCode": "PRIMARY",
+        "houseName": null,
+        "houseNum": null,
+        "street": null,
+        "apartmentNum": null,
+        "district": null,
+        "city": null,
+        "stateProv": null,
+        "postLocaleCode": null,
+        "country": null,
+        "countryCode": null,
+        "county": null
+      },
+      "shortName": "PAULINSKY JAN MARI",
+      "custStatusCode": "ACTIVE CUSTOMER",
+      "taxInfoCode": {
+        "id": "",
+        "idMasked": null
+      },
+      "accessId": "",
+      "custDlrDlrGroupFlag": "Customer information",
+      "bankId": null,
+      "branchId": null,
+      "emailAddress": null,
+      "mobileNoUpdDt": null,
+      "custAcctRelType": null,
+      "emailAddUpdDt": null,
+      "citizenCode": null,
+      "residenceCode": null,
+      "riskCode": null
+    }
+  ]
+}

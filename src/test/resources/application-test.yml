@@ -1,0 +1,81 @@
+EVOLUTION:
+  RETRY:
+    MAX_ATTEMPT: 2
+    MIN-INTERVAL-IN-MILLIS: 500
+  BASE_URL: localhost:999
+  ACCOUNT:
+    BALANCE_INQUIRY:
+      PATH: 8/balance
+    EMPLOYEE_INITIATE:
+      PATH: 8/balance
+    CUSTOMER_ACCOUNT_INITIATE:
+      PATH: 8/balance
+  CUSTOMER:
+    LIST:
+      PATH: 8/balance
+    INITIATE:
+      PATH: 8/balance
+    Retrieve:
+      PATH: 8/balance
+  CARD:
+    ADD_CARD:
+      PATH: 8/balance
+  TOKEN:
+    PATH: localhost:9999/token
+    CHANNEL_ID_HEADER: xyz
+    SOURCE_HEADER: xyz
+request:
+  authorization: hkgitgikj
+  customer-ip: hkgiuouyo
+  customer-user-agent: hgjfufiugi
+  fapi-auth-date: Sun, 10 Sep 2017 19:43:31 UTC
+  interaction-id: hjkygigiouug
+
+Current-account:
+  request:
+    CurrentAccountId: 123456789
+  response:
+    file-path: Current-Account/current_account-response.json
+  sor:
+    request:
+      file-path: Current-Account/current_account-sor-request.json
+    response:
+      file-path: Current-Account/current_account-sor-response.json
+
+Savings-account:
+  request:
+    SavingsAccountId: 123456789
+  response:
+    file-path: Savings-Account/savings-account-response.json
+  sor:
+    request:
+      file-path: Savings-Account/savings-account-sor-request.json
+    response:
+      file-path: Savings-Account/savings-account-sor-response.json
+
+Time-deposit:
+  request:
+    TimeDepositId: 123456789
+  response:
+    file-path: Time-Deposit/time-deposit-response.json
+  sor:
+    request:
+      file-path: Time-Deposit/time-deposit-sor-request.json
+    response:
+      file-path: Time-Deposit/time-deposit-sor-response.json
+
+token:
+  response-file: /access-token-response.json
+
+SOR-Error:
+  error-response:
+    file-path-PS10040: Error_Response_from_SOR/sor-error-PS10040.json
+    file-path-HC00052: Error_Response_from_SOR/sor-error-HC00052.json
+    file-path-PS10032: Error_Response_from_SOR/sor-error-PS10032.json
+    file-path-PS10107: Error_Response_from_SOR/sor-error-PS10107.json
+    file-path-PS10187: Error_Response_from_SOR/sor-error-PS10187.json
+
+server:
+  port: 8095
+  servlet:
+    context-path: /ms-evolution-native

@@ -1,0 +1,77 @@
+{
+  "CardFacility": {
+    "AccountCurrency": {
+      "AccountCurrency": {
+        "Currencycode": "string"
+      },
+      "AccountCurrencyType": "string"
+    },
+    "AccountDetails": {
+      "AccountCurrency": "string",
+      "AccountType": "string",
+      "CardAccountdetails": {
+        "AccountId": "string",
+        "AccountIdMasked": "string",
+        "AccountType": "string",
+        "ShortName": "string",
+        "AccountLinkCount": 0,
+        "ISOId": "string",
+        "VipClass": "string"
+      },
+      "AliasBankAccountDetails": {
+        "AliasAccountId": "string",
+        "AliasAccountIdMasked": "string"
+      },
+      "AliasBankAccountId": {
+        "AccountType": "string"
+      },
+      "BankAccountDetails": {
+        "AccountId": "string",
+        "AccountIdMasked": "string",
+        "AccountType": "string"
+      }
+    },
+    "AssociationObligationEntitlement": {},
+    "AssociationReference": "string",
+    "AssociationType": "string",
+    "Associations": "string",
+    "BankBranchLocationReference": {
+      "BranchCode": "string",
+      "BranchFlagType": "string"
+    },
+    "ConfigurationOptions": "string",
+    "CreditCardFacilityOptionSetting": "string",
+    "CustomerReference": {
+      "CustomerId": {
+        "CustomerNumber": "string"
+      },
+      "LanguageCode": "string",
+      "RequestId": "string"
+    },
+    "DateType": "string",
+    "EntitlementOptionDefinition": "string",
+    "EntitlementOptionSetting": "string",
+    "LinkedAccounts": {
+      "AccountLinks": [
+        {
+          "bankAccountIdType": {
+            "AccountId": "string",
+            "AccountIdMasked": "string",
+            "AccountType": "string"
+          },
+          "sequenceId": 0
+        }
+      ]
+    },
+    "PositionLimitSettings": "string",
+    "PositionLimitType": "string",
+    "PositionLimits": "string",
+    "RestrictionOptionDefinition": "string",
+    "RestrictionOptionSetting": "string",
+    "StatementPeriod": "string",
+    "StatementTransactionType": "string",
+    "StatementType": "string",
+    "StatementsSchedule": "string",
+    "TaxReference": "string"
+  }
+}

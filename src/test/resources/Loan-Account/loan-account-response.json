@@ -1,0 +1,82 @@
+{
+  "Data": {
+    "LoanFacility": {
+      "ProductInstanceReference": "",
+      "LoanNumber": "12345",
+      "CustomerReference": "",
+      "PartyReference": "",
+      "CustomerAgreementReference": "",
+      "CustomerCreditAssessmentReference": "",
+      "InsuranceReference": "",
+      "DelinquencyCollectionReference": "",
+      "BankBranchLocationReference": "",
+      "BankAccountingUnitReference": "",
+      "LoanType": "",
+      "AccountBalance": [
+        {
+          "AccountBalance": {
+            "AmountValue": 0,
+            "AmountCurrency": {
+              "Currencycode": "PHP"
+            },
+            "DecimalPointPosition": ""
+          },
+          "AccountBalanceType": "Loan",
+          "AccounBalanceDate": {
+            "DateTimeContent": "",
+            "TimeZoneCode": "",
+            "DaylightSavingIndicator": ""
+          }
+        }
+      ],
+      "LoanCurrency": {
+        "Currencycode": ""
+      },
+      "LoanRateType": "",
+      "LoanApplicableRate": {
+        "RateValue": "",
+        "RateUnit": "",
+        "RatePeriod": "",
+        "RateCapitalUnit": ""
+      },
+      "RepaymentType": "",
+      "InterestType": "",
+      "InterestAccrualMethod": "",
+      "LoanOriginationDate": {
+        "DateContent": ""
+      },
+      "LoanMaturityDate": {
+        "DateContent": ""
+      },
+      "CollateralReference": "",
+      "CollateralAllocation": "",
+      "TaxReference": "",
+      "LoanAccessTerms": "",
+      "EntitlementOptionDefinition": "",
+      "EntitlementOptionSetting": "",
+      "RestrictionOptionDefinition": "",
+      "RestrictionOptionSetting": "",
+      "Associations": "",
+      "AssociationType": "",
+      "AssociationObligationEntitlement": "",
+      "AssociationReference": "",
+      "LoanRepaymentSchedule": "",
+      "StagedRepaymentStatement": "",
+      "CustomerCommentary": "",
+      "LoanOutstandingBalance": "",
+      "DateType": ""
+    }
+  },
+  "Links": {
+    "Self": "",
+    "First": "",
+    "Prev": "",
+    "Next": "",
+    "Last": ""
+  },
+  "Meta": {
+    "TotalPages": 0,
+    "FirstAvailableDateTime": "",
+    "LastAvailableDateTime": ""
+  }
+}

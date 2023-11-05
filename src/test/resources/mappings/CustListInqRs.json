@@ -1,0 +1,142 @@
+{
+  "mappings": [
+    {
+      "priority": 1,
+      "request": {
+        "method": "POST",
+        "url": "/PartyReference/CustomerProfileSummary/Retrieve",
+        "headers": {
+          "Authorization": {
+            "equalTo": "BearerToken"
+          }
+        },
+        "bodyPatterns": [
+          {
+            "contains": "debitCardNumber\":\"1234"
+          }
+        ]
+      },
+      "response": {
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "status": 200,
+        "jsonBody": {
+          "rqUID": {
+            "rqUID": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+          },
+          "status": {
+            "statusCode": 2,
+            "statusDesc": "string",
+            "supportUID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+            "supportDescription": "string",
+            "errorCount": 0,
+            "warningCount": 0,
+            "errors": [
+              {
+                "source": "string",
+                "errNum": "string",
+                "errDesc": "string",
+                "errDtl": "string",
+                "errField": "string",
+                "errType": "s",
+                "errTagName": "string",
+                "hostErrCode": "string",
+                "useCode": "st",
+                "supportUID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                "rows": [0]
+              }
+            ],
+            "warnings": [
+              {
+                "source": "string",
+                "errNum": "string",
+                "errDesc": "string",
+                "errDtl": "string",
+                "errField": "string",
+                "errType": "s",
+                "errTagName": "string",
+                "hostErrCode": "string",
+                "useCode": "st",
+                "supportUID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                "rows": [0]
+              }
+            ]
+          },
+          "recCtrlOut": {
+            "matchedRec": 0,
+            "sentRec": 0,
+            "cursor": "string"
+          },
+          "custBasics": [
+            {
+              "custId": {
+                "custPermId": "string",
+                "custPermIdMasked": "string"
+              },
+              "custType": "string",
+              "custMailCustCode": "string",
+              "taxId": {
+                "id": "string",
+                "idMasked": ""
+              },
+              "nationalId": {
+                "id": "string",
+                "idMasked": ""
+              },
+              "phoneNum": {
+                "phoneType": "string",
+                "phone": "string",
+                "intlDialCode": "string",
+                "phoneExt": "string"
+              },
+              "birthDt": {
+                "date": "2023-08-08",
+                "dateMasked": ""
+              },
+              "custAddr": {
+                "fullName": "string",
+                "addr1": "string",
+                "addr2": "string",
+                "addr3": "string",
+                "addr4": "string",
+                "addr5": "string",
+                "postalCode": "string",
+                "zipCode": "string",
+                "addrCode": "string",
+                "houseName": "string",
+                "houseNum": "string",
+                "street": "string",
+                "apartmentNum": "string",
+                "district": "string",
+                "city": "string",
+                "stateProv": "string",
+                "postLocaleCode": "string",
+                "country": "string",
+                "countryCode": "string",
+                "county": "string"
+              },
+              "shortName": "string",
+              "custStatusCode": "string",
+              "taxInfoCode": {
+                "id": "string",
+                "idMasked": ""
+              },
+              "accessId": "str",
+              "custDlrDlrGroupFlag": "string",
+              "bankId": "string",
+              "branchId": "string",
+              "emailAddress": "string",
+              "mobileNoUpdDt": "string",
+              "custAcctRelType": "string",
+              "emailAddUpdDt": "string",
+              "citizenCode": "string",
+              "residenceCode": "string",
+              "riskCode": "string"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

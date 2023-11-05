@@ -1,0 +1,43 @@
+{
+  "rqUID": {
+    "rqUID": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+  },
+  "status": {
+    "statusCode": 0,
+    "statusDesc": "string",
+    "supportUID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "supportDescription": "string",
+    "errorCount": 0,
+    "errors": [
+      {
+        "source": "string",
+        "errNum": "string",
+        "errDesc": "string",
+        "errDtl": "string",
+        "errField": "string",
+        "errTagName": "string",
+        "hostErrCode": "string",
+        "useCode": "st",
+        "supportUID": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+      }
+    ]
+  },
+  "custId": {
+    "custPermId": "string",
+    "custPermIdMasked": "string"
+  },
+  "cardAcctRec": {
+    "cardAcctInfo": {
+      "cardAcctId": {
+        "acctId": "string",
+        "acctIdMasked": "",
+        "acctType": "string"
+      },
+      "bankId": "string",
+      "isoId": "string",
+      "memberId": "s",
+      "cardTypeCode": "s"
+    },
+    "shortName": "string"
+  }
+}

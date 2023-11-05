@@ -1,0 +1,331 @@
+{
+  "mappings": [
+    {
+      "priority": 1,
+      "request": {
+        "method": "POST",
+        "url": "/PartyReferenceDataDirectory/CustomerInformation/Retrieve",
+        "headers": {
+          "Authorization": {
+            "equalTo": "BearerToken"
+          }
+        },
+        "bodyPatterns": [
+          {
+            "equalToJson": "{\n  \"rqUID\": {\n    \"rqUID\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\"\n  },\n  \"cardAcctId\": {\n    \"acctId\": \"string\",\n    \"acctIdMasked\": \"\",\n    \"acctType\": \"string\"\n  },\n  \"custId\": {\n    \"custPermId\": \"string\",\n    \"custPermIdMasked\": \"string\"\n  }\n}"
+          }
+        ]
+      },
+      "response": {
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "status": 200,
+        "jsonBody": {
+          "rqUID": {
+            "rqUID": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+          },
+          "status": {
+            "statusCode": 0,
+            "statusDesc": "string",
+            "supportUID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+            "supportDescription": "string",
+            "errorCount": 0,
+            "warningCount": 0,
+            "errors": [
+              {
+                "source": "string",
+                "errNum": "string",
+                "errDesc": "string",
+                "errDtl": "string",
+                "errField": "string",
+                "errType": "s",
+                "errTagName": "string",
+                "hostErrCode": "string",
+                "useCode": "st",
+                "supportUID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                "rows": [
+                  0
+                ]
+              }
+            ],
+            "warnings": [
+              {
+                "source": "string",
+                "errNum": "string",
+                "errDesc": "string",
+                "errDtl": "string",
+                "errField": "string",
+                "errType": "s",
+                "errTagName": "string",
+                "hostErrCode": "string",
+                "useCode": "st",
+                "supportUID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                "rows": [
+                  0
+                ]
+              }
+            ]
+          },
+          "cardAcctId": {
+            "acctId": "string",
+            "acctIdMasked": "",
+            "acctType": "string"
+          },
+          "custId": {
+            "custPermId": "string",
+            "custPermIdMasked": "string"
+          },
+          "custProfBasic": {
+            "branchId": "string",
+            "shortName": "string",
+            "derivedShortName": "string",
+            "primOfficerCode": "string",
+            "secondaryOfficerCode": "string",
+            "extraOfficer1Code": "string",
+            "extraOfficer2Code": "string",
+            "openDt": "2023-08-08",
+            "inqLevelCode": "s",
+            "maintLevelCode": "s",
+            "custLocaleCode": "string",
+            "lastContactDt": "2023-08-08",
+            "lastMaintDt": "2023-08-08",
+            "custStatusCode": "string",
+            "ownHomeCode": "s",
+            "empIncomeAmt": {
+              "amt": 0
+            },
+            "empIncomeSource": "string",
+            "yearsAtJob": 0,
+            "professionCode": "string",
+            "empStatus": "string",
+            "busEmailAddr": "string",
+            "personName": {
+              "lastName": "string",
+              "secondSurname": "string",
+              "firstName": "string",
+              "middleName": "string",
+              "titlePrefix": "string",
+              "nameSuffix": "string",
+              "businessName": "string"
+            },
+            "custAddr": {
+              "fullName": "string",
+              "addr1": "string",
+              "addr2": "string",
+              "addr3": "string",
+              "addr4": "string",
+              "addr5": "string",
+              "houseName": "string",
+              "houseNum": "string",
+              "street": "string",
+              "apartmentNum": "string",
+              "district": "string",
+              "city": "string",
+              "stateProv": "string",
+              "postalCode": "string",
+              "zipCode": "string",
+              "zipSuffix": "string",
+              "zipRouteNum": "st",
+              "zipChkDigit": "s",
+              "postLocaleCode": "string",
+              "drivenStatusCode": "string",
+              "country": "string",
+              "countryCode": "string",
+              "county": "string",
+              "addrCode": "string"
+            },
+            "parsedFlag": "s",
+            "custType": "string",
+            "custProspectCode": "string",
+            "pepSanctionFlag": "string",
+            "customerCollectionsStatus": "s",
+            "phoneNa": [
+              {
+                "phoneType": "string",
+                "phone": "string",
+                "intlDialCode": "string",
+                "phoneExt": "string"
+              }
+            ],
+            "emailAddr": "string",
+            "genderCode": "string",
+            "raceCode": "string",
+            "taxId": {
+              "id": "string",
+              "idMasked": ""
+            },
+            "sicCode": "string",
+            "birthDt": {
+              "date": "2023-08-08",
+              "dateMasked": ""
+            },
+            "nationalId": {
+              "id": "string",
+              "idMasked": ""
+            },
+            "dependentsNum": 0,
+            "contactName": "string",
+            "contactTitle": "string",
+            "language": "string",
+            "citizenCode": "string",
+            "residenceCode": "string",
+            "withholdingCode": "string",
+            "withholdingPercent": 0,
+            "taxInfoCode": {
+              "id": "string",
+              "idMasked": ""
+            },
+            "passportId": "string",
+            "countryOfBirth": "string",
+            "solicitableCode": "string",
+            "accomCode": "string",
+            "socioEconCode": "string",
+            "salutation": "string",
+            "employeeCode": "string",
+            "preferredCustCode": "string",
+            "mktSegCode": "string",
+            "maritalStatusCode": "string",
+            "sendMailCode": "string",
+            "moveInDt": "2023-08-08",
+            "deathDt": "2023-08-08",
+            "cashExclusionCode": "string",
+            "cashExclusionLimit": {
+              "amt": 0
+            },
+            "custExtractCode": "string",
+            "taxIdCertCode": "string",
+            "tinActivityDt": "2023-08-08",
+            "taxIdTypeCode": "string",
+            "w8W9Num": 0,
+            "cardAcctIds": [
+              {
+                "acctId": "string",
+                "acctType": "string",
+                "bankInfo": {
+                  "bankId": "string",
+                  "branchId": "string",
+                  "branchName": "string",
+                  "name": "string"
+                },
+                "cardHolderFlag": "s",
+                "ccMotoAcctType": {
+                  "expDt": "2023-08-08"
+                }
+              }
+            ],
+            "udfCuusr3": "123",
+            "aliasName": {
+              "lastName": "string",
+              "secondSurname": "string",
+              "firstName": "string",
+              "middleName": "string",
+              "titlePrefix": "string",
+              "nameSuffix": "string",
+              "businessName": "string"
+            },
+            "memoFlag": "s",
+            "rqMemoFlag": "s",
+            "ticklerFlag": "s",
+            "rqTicklerFlag": "s",
+            "moveInConfCode": "string",
+            "evePhoneAvailCode": "string",
+            "dayPhoneAvailCode": "string",
+            "custDocCode": "s",
+            "custDocActivityDt": "2023-08-08",
+            "telexNum": "string",
+            "telexAnswerBackNum": "string",
+            "activityLevelCode": "string",
+            "custClassCode": "string",
+            "sourceCode": "s",
+            "lifeStageCode": "string",
+            "behavioralCode": "string",
+            "responsivenessCode": "string",
+            "contactPrefText": "string",
+            "userKey": "string",
+            "custMailAcctCode": "string",
+            "custMailCustCode": "string",
+            "custLinkage": "string",
+            "loyaltyCardNum": "string",
+            "accessCode": "string",
+            "custDlrDlrGroupFlag": "s",
+            "vatExemptionCode": "str",
+            "acctTitle": "string",
+            "affectTaxYrCode": "string",
+            "bDOEmpNbr": "string",
+            "birthTownCity": "string",
+            "birthProvince": "string",
+            "cardIssuance": "string",
+            "cifmainBank": "string",
+            "countryOrigin": "string",
+            "cRBureau": "string",
+            "creditorCode": "string",
+            "crossSell": "string",
+            "crossDef": "string",
+            "currYearDays": "string",
+            "custAcctTyp": "string",
+            "custService": "string",
+            "dateLastUpdate": "string",
+            "dateTagged": "string",
+            "fATCAStat": "string",
+            "fatherName": "string",
+            "holdMail1": "string",
+            "holdMail2": "string",
+            "lastYear": "string",
+            "lastYearDays": "string",
+            "motherName": "string",
+            "natureWrkEmployed": "string",
+            "natureWrkSelf": "string",
+            "originatingBranch": "string",
+            "percentage": "string",
+            "permAddr1": "string",
+            "permAddr2": "string",
+            "permAddr3": "string",
+            "permAddr4": "string",
+            "permAddr5": "string",
+            "permZipCode": "string",
+            "permZipCodeSuff": "string",
+            "powerAtty1": "string",
+            "powerAtty2": "string",
+            "refYear": "string",
+            "remarkAction": "string",
+            "riskCode": "string",
+            "spouseFirstName": "string",
+            "spouseMidName": "string",
+            "spouseLastName": "string",
+            "spouseBirth": "string",
+            "spousePlaceBirth": "string",
+            "spouseWork": "string",
+            "standInstr1": "string",
+            "standInstr2": "string",
+            "substPres": "string",
+            "substOwner": "string",
+            "twoYearsAgo": "string",
+            "twoYearAgoDays": "string",
+            "uDFCuusr1": "string",
+            "uSTIN": "string",
+            "usaddr1": "string",
+            "usaddr2": "string",
+            "usaddr3": "string",
+            "usaddr4": "string",
+            "userFld1": "string",
+            "userFld2": "string",
+            "userFld3": "string",
+            "userFld4": "string",
+            "userFld5": "string",
+            "userFld6": "string",
+            "userFld7": "string",
+            "userFld8": "string",
+            "userFld9": "string",
+            "userFld10": "string",
+            "uSPOBox": "string",
+            "uSTelNbr": "string",
+            "uSZipCode": "string",
+            "reSubmit": "string",
+            "countryBirth": "string"
+          }
+        }
+      }
+    }
+  ]
+}

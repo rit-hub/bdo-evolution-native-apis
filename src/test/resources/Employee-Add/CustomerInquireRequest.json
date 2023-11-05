@@ -1,0 +1,41 @@
+{
+  "CustomerEmploymentDetails": {
+    "CardAccountDetails": {
+      "AccountId": "string",
+      "AccountType": "string"
+    },
+    "CustomerProfileBasic": {
+      "CustomerId": {
+        "CustomerNumber": "string"
+      }
+    },
+    "EmploymentDetails": {
+      "BusinessEmailAddress": "string",
+      "EmployeeAddressDetail": {
+        "AddressCode": "string",
+        "City": "string",
+        "CountryName": "string",
+        "District": "string",
+        "HouseNumber": "string",
+        "StateProvince": "string",
+        "Street": "string",
+        "ZipCode": "string"
+      },
+      "EmployeeIncomeDetails": {
+        "EmployeeIncomeAmount": 0
+      },
+      "EmployerId": "string",
+      "EmployerSicCode": "string",
+      "EmploymentPhoneAvailableCode": "string",
+      "EmploymentStartDate": "string",
+      "EmploymentStopDate": "string",
+      "EmploymentType": "string",
+      "FaxNumber": "string",
+      "JobTitleType": "string",
+      "PayrollId": "string",
+      "PhoneNumber": "string",
+      "PhoneNumberExtension": "string"
+    },
+    "RequestId": "string"
+  }
+}

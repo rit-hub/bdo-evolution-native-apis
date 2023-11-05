@@ -1,0 +1,8 @@
+{
+  "loanAcctId": {
+    "acctId": "12345",
+    "acctType": "LN"
+  },
+  "incExtBal": "true",
+  "incBal": "true"
+}

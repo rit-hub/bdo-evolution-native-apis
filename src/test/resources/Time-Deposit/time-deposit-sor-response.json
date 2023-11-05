@@ -1,0 +1,53 @@
+{
+  "status": {
+    "statusCode": 0,
+    "statusDesc": "successful",
+    "supportUID": null,
+    "supportDescription": null,
+    "errorCount": null,
+    "warningCount": null,
+    "errors": null,
+    "warnings": null
+  },
+  "depAcctId": {
+    "acctId": "123456789",
+    "acctType": "TM"
+  },
+  "acctBals": [
+    {
+      "balType": "Savings",
+      "curAmt": {
+        "amt": 0.1000000000000000055511151231257827021181583404541015625,
+        "curCode": "PHP"
+      }
+    },
+    {
+      "balType": "Avail",
+      "curAmt": {
+        "amt": 18396963.289999999105930328369140625,
+        "curCode": "PHP"
+      }
+    },
+    {
+      "balType": "PastDue",
+      "curAmt": {
+        "amt": 18396963.289999999105930328369140625,
+        "curCode": "PHP"
+      }
+    },
+    {
+      "balType": "Ledger",
+      "curAmt": {
+        "amt": 18396963,
+        "curCode": "PHP"
+      }
+    },
+    {
+      "balType": "MinLedger",
+      "curAmt": {
+        "amt": 18396963.289999999105930328369140625,
+        "curCode": "PHP"
+      }
+    }
+  ]
+}

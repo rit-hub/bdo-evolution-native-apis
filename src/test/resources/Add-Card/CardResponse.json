@@ -1,0 +1,38 @@
+{
+  "Data": {
+    "CustomerReference": {
+      "RequestId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "AccountDetails": {
+        "CardAccountDetails": {
+          "CardAccountId": "string",
+          "AccountNumberMasked": "",
+          "AccountType": "string",
+          "BankId": "string",
+          "ISOId": "string",
+          "MemberId": "s",
+          "CardTypeCode": "s",
+          "CardFacility": null,
+          "ProductInstanceReference": null
+        }
+      },
+      "CustomerId": {
+        "CustomerNumber": "string",
+        "CustomerNumberMasked": "string"
+      },
+      "ShortName": "string"
+    },
+    "CardFacility": null
+  },
+  "Links": {
+    "Self": "http://localhost:8095/ms-evolution-native/CreditCard/CardAccount/Initiate",
+    "First": "",
+    "Prev": "",
+    "Next": "",
+    "Last": ""
+  },
+  "Meta": {
+    "TotalPages": 1,
+    "FirstAvailableDateTime": "",
+    "LastAvailableDateTime": ""
+  }
+}

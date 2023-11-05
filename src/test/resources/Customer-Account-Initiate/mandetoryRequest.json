@@ -1,0 +1,41 @@
+{
+  "SavingAccountFacility": {
+    "AccountDetails": {
+      "AccountCurrency": "string",
+      "AccountType": "LN",
+      "AliasBankAccountId": {
+        "AccountType": "LN"
+      },
+      "BankAccountDetails": {
+        "AccountId": "w",
+        "AccountIdMasked": "string",
+        "AccountType": "LN"
+      }
+    },
+    "AccountRelations": [
+      {
+        "CustomerId": {
+          "CustomerNumber": "string"
+        },
+        "RelationCode": "123"
+      }
+    ],
+    "AssociationReference": {
+      "AssociationObligationOrEntitlement": "string",
+      "AssociationType": "string",
+      "Associations": "string"
+    },
+    "BankBranchOrLocationReference": {},
+    "DateType": "string",
+    "EntitlementOptionSetting": "string",
+    "LinkType": "string",
+    "LinkedAccounts": "string",
+    "PositionLimitSettings": "string",
+    "RestrictionOptionSetting": "string",
+    "StatementPeriod": "string",
+    "StatementReport": "string",
+    "StatementTransactionType": "string",
+    "StatementType": "string",
+    "StatementsSchedule": "string"
+  }
+}

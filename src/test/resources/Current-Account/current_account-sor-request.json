@@ -1,0 +1,8 @@
+{
+  "depAcctId": {
+    "acctId": "123456789",
+    "acctType": "DD"
+  },
+  "incBal": true,
+  "incExtBal": true
+}

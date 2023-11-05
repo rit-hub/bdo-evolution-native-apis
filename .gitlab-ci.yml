@@ -1,0 +1,84 @@
+variables:
+  MAVEN_OPTS: "-Dmaven.repo.local=$CI_PROJECT_DIR/.m2/repository"
+
+cache:
+  paths:
+    - .m2/repository/
+
+image: maven:3.6.3-jdk-11
+
+stages:
+  # - dependencies
+  - sonarqube-check
+  - unit_test
+  - maven_build
+  - kaniko
+  - tag
+
+# dependencies:
+#   stage: dependencies
+#   script:
+#     - sh install_jars.sh
+#   rules:
+#     - exists:
+#         - install_jars.sh
+
+
+maven_build:
+  stage: maven_build
+  script:
+    - mvn clean install deploy -Dmaven.test.skip=true -s ci_settings.xml
+  artifacts:
+    paths:
+      - target/*.jar
+
+unit_test:
+  stage: unit_test
+  image: maven
+  script:
+    - mvn test
+  artifacts:
+    when: always
+    reports:
+      junit:
+        - target/surefire-reports/TEST-*.xml
+
+
+sonarqube-check:
+  stage: sonarqube-check
+  script:
+    - echo ${CI_PROJECT_NAME}
+    - mvn verify sonar:sonar -Dsonar.qualitygate.wait=true
+    - 'curl --location -u ${SONAR_TOKEN}: -X GET "${SONAR_HOST_URL}/api/measures/component?key=ph.com.bdo.api%3A${CI_PROJECT_NAME}&metricKeys=bugs%2Cvulnerabilities%2Ccode_smells%2Ccoverage%2Cduplicated_lines_density%2Ccomplexity%2Cncloc%2Csecurity_hotspots&component=ph.com.bdo.api%3A${CI_PROJECT_NAME}" -o sonar_report.json'
+  artifacts:
+    paths:
+      - sonar_report.json
+  allow_failure: true
+
+kaniko:
+  stage: kaniko
+  image:
+    name: gcr.io/kaniko-project/executor:v1.9.0-debug
+    entrypoint: [ "" ]
+  script:
+    - /kaniko/executor
+      --context "${CI_PROJECT_DIR}"
+      --dockerfile "${CI_PROJECT_DIR}/Dockerfile"
+      --destination "$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/bdo-evolution-native-ms:$CI_COMMIT_SHA"
+  except:
+    - tags
+
+
+tag_image:
+  stage: tag
+  image:
+    name: gcr.io/kaniko-project/executor:v1.9.0-debug
+    entrypoint: [ "" ]
+  script:
+    - /kaniko/executor
+      --context "${CI_PROJECT_DIR}"
+      --dockerfile "${CI_PROJECT_DIR}/Dockerfile"
+      --destination "$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/bdo-evolution-native-ms:$CI_COMMIT_TAG"
+    - echo $CI_COMMIT_TAG
+  only:
+    - tags

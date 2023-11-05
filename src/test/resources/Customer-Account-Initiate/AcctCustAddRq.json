@@ -1,0 +1,26 @@
+{
+  "rqUID": {
+    "rqUID": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+  },
+  "aliasBankAcctId": {
+    "aliasAcctType": "string",
+    "aliasAcctId": "string",
+    "aliasAcctIdMasked": "string"
+  },
+  "bankAcctId": {
+    "acctType": "string",
+    "acctId": "string",
+    "acctIdMasked": ""
+  },
+  "acctRelations": [
+    {
+      "relationCode": "string",
+      "custId": {
+        "custPermId": "string",
+        "custPermIdMasked": "string"
+      },
+      "taxLiabilityPctAmt": 0,
+      "noticeFlagDescription": ""
+    }
+  ]
+}
